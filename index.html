@@ -68,7 +68,7 @@ navigator.geolocation.watchPosition((data) => {
   speed.textContent = Math.round(data.coords.speed); //shows the speed on the page
   arrow.style.transform = `rotate(${data.coords.heading}deg)`; //rotates the compass
 }, (err) => {
-  console.err(err);
+  console.error(err);
   alert("Hey! Please allow location access to see this work");
 }); //gives us the position over time
   </script>
